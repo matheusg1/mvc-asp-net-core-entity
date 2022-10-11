@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
 using SalesWebMvc.Data;
+=======
+>>>>>>> 1fbcb036c74f308bde117697d3994403d9c6a160
 using SalesWebMvc.Models;
 
 namespace SalesWebMvc.Controllers
