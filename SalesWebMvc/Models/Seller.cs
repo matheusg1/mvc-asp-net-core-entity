@@ -22,18 +22,24 @@ namespace SalesWebMvc.Models
         }
 
         public int Id { get; set; }
-
+        [Required(ErrorMessage = "Campo obrigatório")]
+        [StringLength(60, MinimumLength = 2, ErrorMessage = "O tamanho do {0} deve ter entre {2} e {1} dígitos")]
         [Display(Name = "Nome")]
         public string Name { get; set; }
 
+        [Required(ErrorMessage = "Campo obrigatório")]
+        [EmailAddress(ErrorMessage = "Email inválido")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
+        [Required(ErrorMessage = "Campo obrigatório")]
         [Display(Name = "Data de nascimento")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime BirthDate { get; set; }
 
+        [Required(ErrorMessage = "Campo obrigatório")]
+        [Range(100.0, 50000.0, ErrorMessage = "Valor do {0} deve ser entre {1} e {2}")]
         [Display(Name = "Salário base")]
         [DisplayFormat(DataFormatString = "{0:F2}")]
         public double BaseSalary { get; set; }
