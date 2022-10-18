@@ -23,7 +23,7 @@ Código em inglês, interface em português
  - Total de três entidades relacionadas: *Seller*, *Department* e
    *SalesRecord*
 
-## Modelo Entidade-Relacionamento utilizado:<img src="https://i.imgur.com/3trXETs.png"></img>
+## Modelo Entidade-Relacionamento:<img src="https://i.imgur.com/3trXETs.png"></img>
 
 
 #### Ferramentas utilizadas: 
